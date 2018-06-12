@@ -1,3 +1,4 @@
 var cwConfigurationExecuteMapping = {
-	"Calculation engine" : "calculate"
+	"Calculation engine" : "calculate",
+	"Alert Engine" : "alert"
 };
