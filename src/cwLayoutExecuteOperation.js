@@ -32,7 +32,7 @@
   cwLayoutExecuteOperation.prototype.execute = function(objectId, queryString) {
     var url = this.options.CustomOptions['evod-url'],
      error = { 'status': 'Ko', "result": 'Impossible to contact Evolve On Demand' };
-    if (!url.endsWith('/')){
+    if (!url[url.length - 1] === '/') {
       url += '/';
     }
     url += queryString + '/' + cwApi.cwConfigs.ModelFilename.toLowerCase() + '/' +objectId;
