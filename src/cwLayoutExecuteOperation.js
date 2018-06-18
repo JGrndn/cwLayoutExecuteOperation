@@ -16,8 +16,7 @@
   cwLayoutExecuteOperation.prototype.applyJavaScript = function () {
     var that = this;
     if (this.options.CustomOptions['evod-url'] === ''){
-      cwApi.notificationManager.addError($.i18n.prop('execute_config_url_missing'));
-      return;
+      this.options.CustomOptions['evod-url'] = window.location.origin + '/evolveondemand/';
     }
     if (cwApi.isUndefined(this.mainObject.properties.type) || !cwConfigurationExecuteMapping[this.mainObject.properties.type]){
       cwApi.notificationManager.addError($.i18n.prop('execute_config_type_missing'));
