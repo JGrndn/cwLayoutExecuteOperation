@@ -1,7 +1,7 @@
 {
   "name": "cwLayoutExecuteOperation",
   "description": "Allow you to display list of operation configuration with a button to execute them",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "cwLayoutExecuteOperation.js",
   "scripts": {
     "test": ""
